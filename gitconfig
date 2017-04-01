@@ -1,6 +1,5 @@
-# Tell NPM to use https instead of git.
-# see https://github.com/npm/npm/wiki/Troubleshooting#npm-only-uses-git-and-sshgit-urls-for-github-repos-breaking-proxies
-[url "https://github.com/"]
-	insteadOf = git@github.com:
-[url "https://"]
-	insteadOf = git://
+# Git will fail if it can't find user info in passwd.
+
+[user]
+name = nobody
+email = nobody@example.com
