@@ -1,6 +1,6 @@
-[core]
-
 # Tell NPM to use https instead of git.
 # see https://github.com/npm/npm/wiki/Troubleshooting#npm-only-uses-git-and-sshgit-urls-for-github-repos-breaking-proxies
-url."https://github.com/".insteadOf git@github.com:
-url."https://".insteadOf git://
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+[url "https://"]
+	insteadOf = git://
